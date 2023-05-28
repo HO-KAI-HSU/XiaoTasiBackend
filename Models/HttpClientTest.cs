@@ -6,7 +6,7 @@ using System.Text;
 using System.Web.Script.Serialization;
 using Newtonsoft.Json;
 
-namespace travelManagement.Models
+namespace XiaoTasiBackend.Models
 {
     public class HttpClientTest
     {

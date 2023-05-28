@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.Mvc;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class HomeController : Controller
     {

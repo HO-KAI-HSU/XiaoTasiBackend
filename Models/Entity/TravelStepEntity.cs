@@ -1,5 +1,5 @@
 ﻿using System;
-namespace travelManagement.Models.Entity
+namespace XiaoTasiBackend.Models.Entity
 {
     public class TravelStepEntity
     {

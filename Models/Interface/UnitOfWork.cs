@@ -1,7 +1,7 @@
 ﻿using System;
-using travelManagement.Repository;
+using XiaoTasiBackend.Repository;
 
-namespace travelManagement.Models.Interface
+namespace XiaoTasiBackend.Models.Interface
 {
     /// <summary>
     /// 實作Unit Of Work的interface。

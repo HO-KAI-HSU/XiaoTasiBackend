@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class MenuController : Controller
     {

@@ -5,11 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Configuration;
 using System.Web.Mvc;
-using travelManagement.Models.Entity;
-using travelManagement.Service;
-using travelManagement.Service.Impl;
+using XiaoTasiBackend.Models.Entity;
+using XiaoTasiBackend.Service;
+using XiaoTasiBackend.Service.Impl;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class TravelDetailController : Controller
     {

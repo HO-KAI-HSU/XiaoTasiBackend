@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace travelManagement.Models
+namespace XiaoTasiBackend.Models
 {
     public class Every8d
     {

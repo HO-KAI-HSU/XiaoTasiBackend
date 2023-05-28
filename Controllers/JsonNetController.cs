@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using Newtonsoft.Json;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class JsonNetController : Controller
     {

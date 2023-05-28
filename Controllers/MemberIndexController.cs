@@ -3,10 +3,10 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Web.Configuration;
 using System.Web.Mvc;
-using travelManagement.Models;
-using static travelManagement.Controllers.MemberController;
+using XiaoTasiBackend.Models;
+using static XiaoTasiBackend.Controllers.MemberController;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class MemberIndexController : Controller
     {

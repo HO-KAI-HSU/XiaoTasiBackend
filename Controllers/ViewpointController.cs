@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using travelManagement.Helpers;
-using travelManagement.Models;
-using travelManagement.Models.Entity;
-using travelManagement.Service;
-using travelManagement.Service.Impl;
+using XiaoTasiBackend.Helpers;
+using XiaoTasiBackend.Models;
+using XiaoTasiBackend.Models.Entity;
+using XiaoTasiBackend.Service;
+using XiaoTasiBackend.Service.Impl;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class ViewpointController : Controller
     {

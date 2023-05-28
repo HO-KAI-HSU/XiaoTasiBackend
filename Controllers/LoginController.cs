@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.Mvc;
-using travelManagement.Models;
-using travelManagement.Models.Dto;
-using travelManagement.Service;
-using travelManagement.Service.Impl;
+using XiaoTasiBackend.Models;
+using XiaoTasiBackend.Models.Dto;
+using XiaoTasiBackend.Service;
+using XiaoTasiBackend.Service.Impl;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class LoginController : Controller
     {
@@ -130,9 +129,6 @@ namespace travelManagement.Controllers
 
 
 
-
-
-
         public bool _authProcess(string sessionKeyId)
         {
 
@@ -145,19 +141,5 @@ namespace travelManagement.Controllers
                 return false;
             }
         }
-
-        #region Private Methods
-        private static JWTContainerModel GetJWTContainerModel(string phone, string memberCode)
-        {
-            return new JWTContainerModel()
-            {
-                claims = new Claim[]
-                {
-                    new Claim(ClaimTypes.MobilePhone, phone),
-                    new Claim(ClaimTypes.SerialNumber, memberCode)
-                }
-            };
-        }
-        #endregion
     }
 }

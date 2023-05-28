@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Web.Http.Dependencies;
 using Unity;
 
-namespace travelManagement.Models
+namespace XiaoTasiBackend.Models
 {
     public class UnityResolver : IDependencyResolver
     {

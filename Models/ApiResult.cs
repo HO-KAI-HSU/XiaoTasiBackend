@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace travelManagement.Models
+namespace XiaoTasiBackend.Models
 {
     // <summary>
     /// API呼叫時，傳回的統一物件

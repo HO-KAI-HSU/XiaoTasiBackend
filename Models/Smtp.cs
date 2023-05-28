@@ -9,7 +9,7 @@ using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace travelManagement.Models
+namespace XiaoTasiBackend.Models
 {
     public class Smtp
     {

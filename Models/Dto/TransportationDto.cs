@@ -1,5 +1,5 @@
 ﻿using System;
-namespace travelManagement.Models.Dto
+namespace XiaoTasiBackend.Models.Dto
 {
     public class TransportationDto
     {

@@ -6,15 +6,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Configuration;
 using System.Web.Mvc;
-using travelManagement.Managers;
-using travelManagement.Models;
-using travelManagement.Models.Dto;
-using travelManagement.Models.Entity;
-using travelManagement.Service;
-using travelManagement.Service.Impl;
-using static travelManagement.Controllers.TravelController;
+using XiaoTasiBackend.Models;
+using XiaoTasiBackend.Models.Dto;
+using XiaoTasiBackend.Models.Entity;
+using XiaoTasiBackend.Service;
+using XiaoTasiBackend.Service.Impl;
+using static XiaoTasiBackend.Controllers.TravelController;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class ReservationController : Controller
     {
@@ -429,114 +428,6 @@ namespace travelManagement.Controllers
             }
         }
 
-        [HttpPost]
-        public ActionResult GetReservationSeatList(string token, string travelCode, string travelStepCode)
-        {
-            IAuthContainerModel model = new JWTContainerModel();
-            IAuthService authService = new JWTService(model.secretKey);
-            bool res = authService.isTokenVaild(token);
-            if (!res)
-            {
-                return Json(new ApiError(1014, "Token Expired!", "登入時效已過，請重新登入！"));
-
-            }
-            // 旅遊梯次詳情與交通綁定資訊
-            TravelStepTransportMatch travelStepTransportMatch = this.getTraveStepInfo(travelStepCode);
-            Console.WriteLine("{0}", travelStepTransportMatch.transportationIds);
-            Console.WriteLine("{0}", travelStepTransportMatch.travelStepId);
-            GetReservationSeatListApi getReservationSeatListApi = new GetReservationSeatListApi();
-            String transportationIds = travelStepTransportMatch.transportationIds;
-            String[] transportationIdArr = transportationIds == null ? new String[0] : transportationIds.Split(',');
-            // 取得陣列堆疊
-            Stack<string> transportationIdArrStack = new Stack<string>(transportationIdArr);
-            //// 後進先出，去掉最後一個值
-            //transportationIdArrStack.Pop();
-            String[] transportationIdArrNew = transportationIdArrStack.ToArray();
-            List<ReservationListData> reservationList = new List<ReservationListData>();
-            List<TransportationListData> transportationList = new List<TransportationListData>();
-            int transportationStep = 1;
-            foreach (var transportationId in transportationIdArrNew)
-            {
-                ReservationListData reservationListData = new ReservationListData();
-                TransportationListData transportationListData = new TransportationListData();
-                List<ReservationSeatMatch> reservationSeatMatch = this.getTraveSeatList(transportationId, travelStepTransportMatch.travelStepId);
-                Console.WriteLine("{0}", travelStepTransportMatch.travelStepId);
-                int retainSeat = reservationSeatMatch.Count;
-                Console.WriteLine("{0}", retainSeat);
-                foreach (ReservationSeatMatch reservationSeatMatchTmp in reservationSeatMatch)
-                {
-                    Console.WriteLine("{0}", reservationSeatMatchTmp.seatStatus);
-                    if (reservationSeatMatchTmp.seatStatus.Equals(1))
-                    {
-                        retainSeat = retainSeat - 1;
-                    }
-                }
-                reservationListData.transportationStep = transportationStep;
-                Console.WriteLine("{0}", transportationStep);
-                reservationListData.reservationSeatList = reservationSeatMatch;
-                transportationListData.transportationStep = transportationStep;
-                transportationListData.remainSeatNum = retainSeat.ToString();
-                transportationListData.transportationCode = "";
-                reservationList.Add(reservationListData);
-                transportationList.Add(transportationListData);
-                transportationStep++;
-            }
-            string format = "yyyy-MM-dd";
-            string startDate = "";
-            if (travelStepTransportMatch.travelStime != null)
-            {
-                DateTime startDateTime = DateTime.Parse(travelStepTransportMatch.travelStime);
-                startDate = startDateTime.ToString(format);
-            }
-            getReservationSeatListApi.success = 1;
-            getReservationSeatListApi.travelStep = 1;
-            getReservationSeatListApi.startDate = startDate;
-            getReservationSeatListApi.travelCode = travelCode;
-            getReservationSeatListApi.reservationList = reservationList;
-            getReservationSeatListApi.transportationList = transportationList;
-            return Json(getReservationSeatListApi);
-        }
-
-        [HttpPost]
-        public ActionResult CreateTravelReservation(CreateTravelReservationBo createTravelReservationBo)
-        {
-            IAuthContainerModel model = new JWTContainerModel();
-            IAuthService authService = new JWTService(model.secretKey);
-            CreateTravelReservationAPI createTravelReservationAPI = new CreateTravelReservationAPI();
-            bool res = authService.isTokenVaild(createTravelReservationBo.token);
-            if (!res)
-            {
-                return Json(new ApiError(1014, "Token Expired!", "登入時效已過，請重新登入！"));
-
-            }
-            string travelStepCode = createTravelReservationBo.travelStepCode;
-            List<MemberReservationArrBo> memberReservationArrBo = createTravelReservationBo.memberReservationArr;
-            TravelStepTransportMatch travelStepTransportMatch = this.getTraveStepInfo(travelStepCode);
-            string seatIds = "";
-            int reservationNum = memberReservationArrBo.Count();
-            int reservationCost = memberReservationArrBo.Count() * travelStepTransportMatch.travelCost;
-            int travelStepId = travelStepTransportMatch.travelStepId;
-            string orderCode = this.createOrderNumber();
-            foreach (MemberReservationArrBo memberReservation in memberReservationArrBo)
-            {
-                this.addReservationMemberInfo(memberReservation, travelStepId, "memberCode00001", orderCode);
-                if (seatIds == "")
-                {
-                    seatIds = memberReservation.seatId + ",";
-                }
-                else
-                {
-                    seatIds = seatIds + memberReservation.seatId + ",";
-                }
-            }
-            this.addReservation("memberCode00001", orderCode, reservationNum, reservationCost, seatIds, travelStepId, "", travelStepTransportMatch.travelId);
-            Dictionary<string, string> createRes = orderController.createOrder(orderCode, reservationNum, reservationCost);
-            createTravelReservationAPI.success = 1;
-            createTravelReservationAPI.reservationCode = orderCode;
-            return Json(createTravelReservationAPI);
-        }
-
-
         // 取得旅遊梯次乘車詳情
         public TravelStepTransportMatch getTraveStepInfo(string travelStepCode)
         {
@@ -589,33 +480,6 @@ namespace travelManagement.Controllers
                 reservationSeatList.Add(reservationSeatMatch);
             }
             return reservationSeatList;
-        }
-
-        // 取得會員旅遊訂單列表
-        [HttpPost]
-        public ActionResult getTravelReservationInfo(string token, string memberCode, string travelReservationCode)
-        {
-            IAuthContainerModel model = new JWTContainerModel();
-            IAuthService authService = new JWTService(model.secretKey);
-            bool res = authService.isTokenVaild(token);
-            if (!res)
-            {
-                return Json(new ApiError(1014, "Token Expired!", "登入時效已過，請重新登入！"));
-
-            }
-            TravelReservationInfoData travelReservationInfoData = this._getTravelReservationInfo(memberCode, travelReservationCode);
-            TravelStepTransportMatch travelStepTransportMatch = this.getTraveStepInfo(travelReservationInfoData.travelStepCode);
-            int travelStepId = travelStepTransportMatch.travelStepId;
-            List<MemberReservationListData> memberReservationListDatas = this._memberReservationList(memberCode, travelReservationCode);
-            GetTravelReservationInfoApi getTravelReservationInfoApi = new GetTravelReservationInfoApi();
-            String name = memberIndexController._getMemberInfo(memberCode).name;
-            travelReservationInfoData.orderName = name;
-            travelReservationInfoData.memberCode = memberCode;
-            getTravelReservationInfoApi.success = 1;
-            getTravelReservationInfoApi.payStatus = travelReservationInfoData.payStatus;
-            getTravelReservationInfoApi.travelReservationInfo = travelReservationInfoData;
-            getTravelReservationInfoApi.memberReservationList = memberReservationListDatas;
-            return Json(getTravelReservationInfoApi);
         }
 
         // 取得會員旅遊訂單列表

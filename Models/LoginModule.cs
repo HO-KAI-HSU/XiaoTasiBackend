@@ -1,5 +1,5 @@
 ﻿using System;
-namespace travelManagement.Models
+namespace XiaoTasiBackend.Models
 {
     public class LoginModule
     {

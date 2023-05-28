@@ -6,10 +6,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.Mvc;
-using travelManagement.Models;
-using static travelManagement.Controllers.LoginController;
+using XiaoTasiBackend.Models;
+using static XiaoTasiBackend.Controllers.LoginController;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class StaffController : Controller
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace travelManagement.Models.Entity
+namespace XiaoTasiBackend.Models.Entity
 {
     /// <summary>
     /// 用來代表一筆需要顯示的ReservationEntity資訊ReservationEntity

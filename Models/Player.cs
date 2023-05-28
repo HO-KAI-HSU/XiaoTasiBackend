@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class Player
     {

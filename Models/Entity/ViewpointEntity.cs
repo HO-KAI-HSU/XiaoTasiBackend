@@ -1,4 +1,4 @@
-﻿namespace travelManagement.Models.Entity
+﻿namespace XiaoTasiBackend.Models.Entity
 {
     public class ViewpointEntity
     {

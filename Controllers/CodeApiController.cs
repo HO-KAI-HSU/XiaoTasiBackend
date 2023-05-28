@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using travelManagement.Models;
+using XiaoTasiBackend.Models;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class CodeApiController : Controller
     {

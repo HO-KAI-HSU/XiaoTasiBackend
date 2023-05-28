@@ -4,9 +4,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Web.Configuration;
 using System.Web.Mvc;
-using travelManagement.Models;
+using XiaoTasiBackend.Models;
 
-namespace travelManagement.Controllers
+namespace XiaoTasiBackend.Controllers
 {
     public class MemberReservationController : Controller
     {

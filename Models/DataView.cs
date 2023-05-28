@@ -2,7 +2,7 @@
 using System.Collections;
 using System.ComponentModel;
 
-namespace travelManagement.Models
+namespace XiaoTasiBackend.Models
 {
     public class DataView : System.ComponentModel.MarshalByValueComponent, System.Collections.IList, System.ComponentModel.IBindingListView, System.ComponentModel.ISupportInitializeNotification, System.ComponentModel.ITypedList
     {
