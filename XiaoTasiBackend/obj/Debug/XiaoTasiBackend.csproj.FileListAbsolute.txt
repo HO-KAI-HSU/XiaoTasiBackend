@@ -87,7 +87,6 @@
 /Users/georgehsu/Projects/XiaoTasiBackend/XiaoTasiBackend/bin/Autofac.Integration.Mvc.xml
 /Users/georgehsu/Projects/XiaoTasiBackend/XiaoTasiBackend/bin/StructureMap.xml
 /Users/georgehsu/Projects/XiaoTasiBackend/XiaoTasiBackend/bin/System.Web.Http.WebHost.xml
-/Users/georgehsu/Projects/XiaoTasiBackend/XiaoTasiBackend/obj/Debug/XiaoTasiBackend.csprojAssemblyReference.cache
 /Users/georgehsu/Projects/XiaoTasiBackend/XiaoTasiBackend/obj/Debug/XiaoTasiBackend.csproj.CoreCompileInputs.cache
 /Users/georgehsu/Projects/XiaoTasiBackend/XiaoTasiBackend/obj/Debug/XiaoTasiBackend.csproj.CopyComplete
 /Users/georgehsu/Projects/XiaoTasiBackend/XiaoTasiBackend/obj/Debug/XiaoTasiBackend.dll
