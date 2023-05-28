@@ -1,0 +1,653 @@
+﻿
+/* --Multi_ple_day_trip_info--------------------------------- */
+.multiple_day_travel_box {
+    background: url(../images/texture_pattern.png) repeat;
+    padding: 24px 0 80px 0;
+    position: relative;
+    width: 100%;
+}
+
+.multiple_day_video_box, .multiple_day_travel_list_box {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 100%;
+}
+
+    .multiple_day_video_box h2, .multiple_day_travel_list_box h2 {
+        font-size: 26px;
+        padding: 0 0 20px 20px;
+        position: relative;
+    }
+
+        .multiple_day_video_box h2:before {
+            background: #f8b12c;
+        }
+
+        .multiple_day_travel_list_box h2:before {
+            background: #0c9ef0;
+        }
+
+    .multiple_day_video_box h3 {
+        font-size: 26px;
+        font-weight: 600;
+        padding: 20px 0 16px 0;
+    }
+
+        .multiple_day_video_box h3 span.video_mark {
+            color: #02a2f7;
+            margin-left: 15px;
+        }
+
+    .multiple_day_video_box p {
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 18px;
+        text-align: justify;
+    }
+
+        .multiple_day_video_box p:last-child {
+            padding-bottom: 0;
+        }
+
+img.multiple_day_video_photo {
+    cursor: pointer;
+    height: auto;
+    opacity: 1;
+}
+
+.multiple_day_travel_list_tabs {
+    list-style-type: none;
+    margin: 10px auto 20px auto;
+    max-width: 906px;
+    width: 100%;
+}
+
+    .multiple_day_travel_list_tabs li.two_day_btn {
+        background: #e6e6e8;
+        border-radius: 8px;
+        color: #2d2a28;
+        cursor: pointer;
+        display: block;
+        float: left;
+        height: 54px;
+        margin-right: 35px;
+        text-align: center;
+        width: 200px;
+    }
+
+        .multiple_day_travel_list_tabs li.two_day_btn:last-child {
+            margin-right: 0;
+        }
+
+    .multiple_day_travel_list_tabs li.tab_current {
+        background: #02a2f7;
+        color: #fff;
+        position: relative;
+    }
+
+        .multiple_day_travel_list_tabs li.tab_current:after {
+            content: "";
+            display: block;
+            border-style: solid;
+            border-width: 13px 7.5px 0 7.5px;
+            border-color: #02a2f7 transparent transparent transparent;
+            height: 0;
+            margin: 0 auto;
+            width: 0;
+        }
+
+    .multiple_day_travel_list_tabs li.two_day_btn a {
+        color: #2d2a28;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 54px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .multiple_day_travel_list_tabs li.tab_current a {
+        color: #fff;
+    }
+
+.tabs_fee_text {
+    margin-top: 34px;
+}
+
+    .tabs_fee_text h3 {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+
+    .tabs_fee_text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+        .tabs_fee_text p.tabs_fee_text_notice {
+            color: #ffa300;
+            font-weight: 600;
+        }
+
+.multiple_day_travel_list_box .travel_table {
+    border: none;
+    display: none;
+    margin: 60px auto 0 auto;
+    max-width: 1250px;
+    width: 100%;
+}
+
+    .multiple_day_travel_list_box .travel_table tr th.order_date {
+        width: 12.16%;
+    }
+
+    .multiple_day_travel_list_box .travel_table tr th.place_food_hotel {
+        width: 29.28%;
+    }
+
+    .multiple_day_travel_list_box .travel_table tr td {
+        background: #f3f3f3;
+        font-weight: 600;
+    }
+
+        .multiple_day_travel_list_box .travel_table tr td.water_blue {
+            background: #c3e3f4;
+            text-align: center;
+        }
+
+span.tabs_brief_btn {
+    border: 2px solid #02a2f7;
+    color: #02a2f7;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 36px;
+    margin: -4px 0 20px 0;
+    opacity: 1;
+    text-align: center;
+    width: 140px;
+}
+
+    span.tabs_brief_btn.show {
+        background: #02a2f7;
+        color: #fff;
+    }
+
+    span.tabs_brief_btn:hover {
+        opacity: .7;
+        transition: .4s opacity ease-in-out;
+    }
+
+.timeline_travel {
+    margin-top: 40px;
+}
+
+    .timeline_travel h3 {
+        border-bottom: 2px solid #02a2f7;
+        color: #02a2f7;
+        font-size: 26px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+
+.timeline_box {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-top: 28px;
+    position: relative;
+    width: 100%;
+}
+
+.timeline_detail {
+    display: inline-block;
+    margin: 0 30px 30px 0;
+    width: 48.58%;
+}
+
+    .timeline_detail:nth-child(2n+2) {
+        margin-right: 0;
+    }
+
+    .timeline_detail:nth-last-child(1), .timeline_detail:nth-last-child(2) {
+        margin-bottom: 0;
+    }
+
+.timeline_content {
+    background: #def3ff;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+    .timeline_content img {
+        height: auto;
+        width: 100%;
+    }
+
+    .timeline_content h4 {
+        font-size: 22px;
+        padding: 12px 0;
+    }
+
+    .timeline_content p {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: justify;
+    }
+/* --Booking--------------------------------- */
+.booking_list_box {
+    border: 4px solid #02a2f7;
+    border-radius: 10px;
+    margin: 40px auto 0 auto;
+    max-width: 1250px;
+    padding: 20px 20px 10px 20px;
+    width: 100%;
+}
+
+    .booking_list_box h2 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    .booking_list_box p {
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+        line-height: 26px;
+        padding: 14px 0;
+    }
+
+        .booking_list_box p.no_top_padding {
+            padding: 2px 0 14px 0;
+        }
+
+        .booking_list_box p span.dollars {
+            color: #ff0000;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+    .booking_list_box ul {
+        border-bottom: 1px solid #ddd;
+        list-style-type: none;
+        padding: 14px 0;
+    }
+
+        .booking_list_box ul:last-child {
+            border-bottom: none;
+        }
+
+    .booking_list_box li {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+        .booking_list_box li.booking_list_title {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 4px;
+        }
+
+        .booking_list_box li a.file_download {
+            color: #ff0000;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+.booking_ticket {
+    border: 2px solid #02a2f7;
+    border-radius: 10px;
+    float: right;
+    max-width: 400px;
+    padding: 10px 10px 20px 10px;
+    width: 100%;
+}
+
+    .booking_ticket .booking_seat {
+        background: #F4A100;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .booking_ticket .booking_table_content {
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    .booking_ticket .booking_list {
+        margin-top: 10px;
+    }
+
+        .booking_ticket .booking_list .booking_title {
+            background: #FFFAC6;
+            color: #2d2a28;
+            display: block;
+            float: left;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 34px;
+            text-align: center;
+            width: 36%;
+        }
+
+        .booking_ticket .booking_list .booking_field {
+            float: right;
+            width: 64%;
+        }
+
+            .booking_ticket .booking_list .booking_field input, .booking_ticket .booking_list .booking_field select {
+                background: #fff;
+                border: 2px solid #ddd;
+                display: block;
+                font-size: 14px;
+                height: 33.6px;
+                margin: 0 auto;
+                outline: none;
+                padding: 6px;
+                width: 90%;
+            }
+
+            .booking_ticket .booking_list .booking_field textarea {
+                border: 2px solid #ddd;
+                display: block;
+                height: 120px;
+                margin: 0 auto;
+                outline: none;
+                padding: 6px;
+                resize: none;
+                width: 90%;
+            }
+
+.room_toggle {
+    display: none;
+}
+
+.tour_bus_seat_map {
+    border: 2px solid #02a2f7;
+    border-radius: 10px;
+    float: left;
+    max-width: 760px;
+    padding: 10px 10px 0 10px;
+    width: 100%;
+}
+
+.tour_bus_seat_left, .tour_bus_seat_right {
+    width: 100%;
+}
+
+.tour_bus_seat_left_box, .tour_bus_seat_right_box {
+    width: 47%;
+}
+
+.tour_bus_seat_left_box {
+    float: left;
+}
+
+.tour_bus_seat_right_box {
+    float: right;
+}
+
+.tour_bus_choose_box {
+    background-color: #fff;
+    list-style-type: none;
+    margin: 10px auto;
+    max-width: 1250px;
+    width: 100%;
+}
+
+    .tour_bus_choose_box li {
+        background: #e6e6e8;
+        border-radius: 6px;
+        float: left;
+        margin-right: 12px;
+        text-align: center;
+    }
+
+        .tour_bus_choose_box li a {
+            color: #2d2a28;
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 7px 9px;
+            text-decoration: none;
+        }
+
+        .tour_bus_choose_box li.tab_current {
+            background: #02a2f7;
+        }
+
+            .tour_bus_choose_box li.tab_current a {
+                color: #fff;
+            }
+
+.tour_bus_seat {
+    background: #FAFAFA;
+    border-color: #171717;
+    border-radius: 50px;
+    color: #171717;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 7px;
+    padding: 0px;
+    text-align: center;
+    width: 49%;
+}
+
+.tour_bus_seat_map.tour_bus_seat_current {
+    display: inherit;
+}
+
+.tour_bus_seat.no_seat {
+    background: none;
+}
+
+.tour_bus_seat.booking_seat {
+    background: #F4A100;
+}
+
+.tour_bus_seat.disabled_seat {
+    background: #FFFFD4;
+}
+
+.tour_bus_safe_door {
+    background: #d3cece;
+    border-radius: 6px;
+    color: #4b423d;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.tour_bus_seat_bottom_box .tour_bus_seat {
+    border-radius: 6px;
+    margin-bottom: 0;
+    padding: 0px;
+    text-align: center;
+    width: 23%;
+}
+
+    .tour_bus_seat_bottom_box .tour_bus_seat:nth-child(3) {
+        padding: 18px 11px;
+        width: 4.8%;
+    }
+
+/* --News--------------------------------- */
+.news_detail_box {
+    position: relative;
+}
+
+    .news_detail_box:before {
+        content: "";
+        background-color: #fff;
+        border-radius: 68px 68px 0 0;
+        display: block;
+        height: 30px;
+        left: 50%;
+        position: absolute;
+        top: -0.68%;
+        transform: translate(-50%, -50%);
+        width: 68px;
+    }
+
+.news_box h1 {
+    color: #2d2a28;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 auto;
+    max-width: 275px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+    .news_box h1.news_page_title {
+        line-height: 28px;
+        max-width: none;
+    }
+
+    .news_box h1:before, .news_box h1:after {
+        content: "";
+        background-image: url(../images/title_decoration.png);
+        display: block;
+        height: 22px;
+        position: absolute;
+        top: 8px;
+        width: 30px;
+    }
+
+.news_info_detail h1 {
+    padding-bottom: 36px;
+}
+
+    .news_info_detail h1:before, .news_info_detail h1:after {
+        background-image: none;
+    }
+
+.news_info_detail p {
+    font-size: 15px;
+    line-height: 29px;
+    text-align: justify;
+}
+
+.news_box h1:before {
+    left: 0;
+}
+
+.news_box h1:after {
+    right: 0;
+}
+
+.news_box h1 span.orange_title {
+    color: #ffa300;
+}
+
+.news_box img.photo_video {
+    cursor: pointer;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+
+ul.news_content {
+    border-bottom: 1px solid #dadada;
+    margin-top: 35px;
+    padding-bottom: 30px;
+}
+
+    ul.news_content:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    ul.news_content li {
+        float: left;
+        margin-right: 35px;
+        position: relative;
+        width: 31.3%;
+    }
+
+        ul.news_content li:nth-child(3n+3) {
+            margin-right: 0;
+        }
+
+        ul.news_content li:last-child {
+            margin-right: 0;
+        }
+
+        ul.news_content li img {
+            height: auto;
+            max-width: 100%;
+            padding-bottom: 4px;
+            transition: .4s opacity ease-in-out;
+        }
+
+        ul.news_content li span.date {
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+
+        ul.news_content li h4 {
+            color: #2d2a28;
+            font-size: 22px;
+            line-height: 28px;
+            padding: 6px 0;
+            text-align: justify;
+        }
+
+            ul.news_content li h4 a {
+                color: #2d2a28;
+                opacity: 1;
+                text-decoration: none;
+                transition: .4s opacity ease-in-out;
+            }
+
+                ul.news_content li h4 a:hover {
+                    cursor: pointer;
+                    opacity: .7;
+                }
+
+        ul.news_content li p {
+            font-size: 14px;
+            line-height: 24px;
+            text-align: justify;
+        }
+
+        ul.news_content li img.ticket_icon {
+            width: 54px;
+        }
+
+        ul.news_content li img.bag_icon {
+            width: 40px;
+        }
+
+        ul.news_content li img.book_icon {
+            width: 58px;
+        }
+
+        ul.news_content li img.ticket_icon, ul.news_content li img.bag_icon, ul.news_content li img.book_icon {
+            display: block;
+            height: auto;
+            left: 120px;
+            position: absolute;
+            top: 360px;
+        }
+
+.mt32 {
+    margin-top: 32px;
+}
+
+.mt70 {
+    margin-top: 70px;
+}
