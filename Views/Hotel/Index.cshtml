@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- start: Meta -->
+    <meta charset="utf-8" />
+    <title>SimpliQ - Flat & Responsive Bootstrap Admin Template</title>
+    <meta name="description" content="SimpliQ - Flat & Responsive Bootstrap Admin Template." />
+    <meta name="author" content="Łukasz Holeczek" />
+    <meta name="keyword" content="SimpliQ, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina" />
+    <!-- end: Meta -->
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- end: Mobile Specific -->
+    <!-- start: CSS -->
+    <link href="/Scripts/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Scripts/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/Scripts/css/style.min.css" rel="stylesheet" />
+    <link href="/Scripts/css/style-responsive.min.css" rel="stylesheet" />
+    <link href="/Scripts/css/retina.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.jqueryui.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.0.5/css/scroller.jqueryui.min.css" />
+    <!-- end: CSS -->
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <link id="ie-style" href="css/ie.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if IE 9]>
+        <link id="ie9style" href="css/ie9.css" rel="stylesheet">
+    <![endif]-->
+    <!-- start: Favicon and Touch Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Scripts/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Scripts/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Scripts/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="/Scripts/ico/apple-touch-icon-57-precomposed.png" />
+    <link rel="shortcut icon" href="/Scripts/ico/favicon.png" />
+    <!-- end: Favicon and Touch Icons -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <!-- start: Header -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a id="main-menu-toggle" class="hidden-phone open"><i class="icon-reorder"></i></a>
+                <div class="row-fluid">
+                    <a class="brand span2" href="index.html"><span>SimpliQ</span></a>
+                </div>
+                <!-- start: Header Menu -->
+                <div class="nav-no-collapse header-nav">
+                    <ul class="nav pull-right">
+                        <li class="dropdown hidden-phone">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="icon-warning-sign"></i>
+                            </a>
+                            <ul class="dropdown-menu notifications">
+                                <li class="dropdown-menu-title">
+                                    <span>You have 11 notifications</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon blue"><i class="icon-user"></i></span>
+                                        <span class="message">New user registration</span>
+                                        <span class="time">1 min</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon green"><i class="icon-comment-alt"></i></span>
+                                        <span class="message">New comment</span>
+                                        <span class="time">7 min</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon green"><i class="icon-comment-alt"></i></span>
+                                        <span class="message">New comment</span>
+                                        <span class="time">8 min</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon green"><i class="icon-comment-alt"></i></span>
+                                        <span class="message">New comment</span>
+                                        <span class="time">16 min</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon blue"><i class="icon-user"></i></span>
+                                        <span class="message">New user registration</span>
+                                        <span class="time">36 min</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon yellow"><i class="icon-shopping-cart"></i></span>
+                                        <span class="message">2 items sold</span>
+                                        <span class="time">1 hour</span>
+                                    </a>
+                                </li>
+                                <li class="warning">
+                                    <a href="#">
+                                        <span class="icon red"><i class="icon-user"></i></span>
+                                        <span class="message">User deleted account</span>
+                                        <span class="time">2 hour</span>
+                                    </a>
+                                </li>
+                                <li class="warning">
+                                    <a href="#">
+                                        <span class="icon red"><i class="icon-shopping-cart"></i></span>
+                                        <span class="message">Transaction was canceled</span>
+                                        <span class="time">6 hour</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon green"><i class="icon-comment-alt"></i></span>
+                                        <span class="message">New comment</span>
+                                        <span class="time">yesterday</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="icon blue"><i class="icon-user"></i></span>
+                                        <span class="message">New user registration</span>
+                                        <span class="time">yesterday</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu-sub-footer">
+                                    <a>View all notifications</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- start: Notifications Dropdown -->
+                        <li class="dropdown hidden-phone">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="icon-tasks"></i>
+                            </a>
+                            <ul class="dropdown-menu tasks">
+                                <li>
+                                    <span class="dropdown-menu-title">You have 17 tasks in progress</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header">
+                                            <span class="title">iOS Development</span>
+                                            <span class="percent"></span>
+                                        </span>
+                                        <div class="taskProgress progressSlim progressBlue">80</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header">
+                                            <span class="title">Android Development</span>
+                                            <span class="percent"></span>
+                                        </span>
+                                        <div class="taskProgress progressSlim progressYellow">47</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header">
+                                            <span class="title">Django Project For Google</span>
+                                            <span class="percent"></span>
+                                        </span>
+                                        <div class="taskProgress progressSlim progressRed">32</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header">
+                                            <span class="title">SEO for new sites</span>
+                                            <span class="percent"></span>
+                                        </span>
+                                        <div class="taskProgress progressSlim progressGreen">63</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header">
+                                            <span class="title">New blog posts</span>
+                                            <span class="percent"></span>
+                                        </span>
+                                        <div class="taskProgress progressSlim progressPink">80</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-menu-sub-footer">View all tasks</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end: Notifications Dropdown -->
+                        <!-- start: Message Dropdown -->
+                        <li class="dropdown hidden-phone">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="icon-envelope"></i>
+                            </a>
+                            <ul class="dropdown-menu messages">
+                                <li>
+                                    <span class="dropdown-menu-title">You have 9 messages</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="avatar"><img src="img/avatar.jpg" alt="Avatar" /></span>
+                                        <span class="header">
+                                            <span class="from">
+                                                Łukasz Holeczek
+                                            </span>
+                                            <span class="time">
+                                                6 min
+                                            </span>
+                                        </span>
+                                        <span class="message">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="avatar"><img src="img/avatar2.jpg" alt="Avatar" /></span>
+                                        <span class="header">
+                                            <span class="from">
+                                                Megan Abott
+                                            </span>
+                                            <span class="time">
+                                                56 min
+                                            </span>
+                                        </span>
+                                        <span class="message">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="avatar"><img src="img/avatar3.jpg" alt="Avatar" /></span>
+                                        <span class="header">
+                                            <span class="from">
+                                                Kate Ross
+                                            </span>
+                                            <span class="time">
+                                                3 hours
+                                            </span>
+                                        </span>
+                                        <span class="message">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="avatar"><img src="img/avatar4.jpg" alt="Avatar" /></span>
+                                        <span class="header">
+                                            <span class="from">
+                                                Julie Blank
+                                            </span>
+                                            <span class="time">
+                                                yesterday
+                                            </span>
+                                        </span>
+                                        <span class="message">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="avatar"><img src="img/avatar5.jpg" alt="Avatar" /></span>
+                                        <span class="header">
+                                            <span class="from">
+                                                Jane Sanders
+                                            </span>
+                                            <span class="time">
+                                                Jul 25, 2012
+                                            </span>
+                                        </span>
+                                        <span class="message">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-menu-sub-footer">View all messages</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end: Message Dropdown -->
+                        <li>
+                            <a class="btn" href="#">
+                                <i class="icon-wrench"></i>
+                            </a>
+                        </li>
+                        <!-- start: User Dropdown -->
+                        <li class="dropdown">
+                            <a class="btn account dropdown-toggle" data-toggle="dropdown" href="#">
+                                <div class="avatar"><img src="img/avatar.jpg" alt="Avatar" /></div>
+                                <div class="user">
+                                    <span class="hello">Welcome!</span>
+                                    <span class="name">Łukasz Holeczek</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu-title">
+
+                                </li>
+                                <li><a href="#"><i class="icon-user"></i> Profile</a></li>
+                                <li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+                                <li><a href="#"><i class="icon-envelope"></i> Messages</a></li>
+                                <li><a href="login.html"><i class="icon-off"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                        <!-- end: User Dropdown -->
+                    </ul>
+                </div>
+                <!-- end: Header Menu -->
+
+            </div>
+        </div>
+    </div>
+    <!-- start: Header -->
+
+    <div class="container-fluid-full">
+        <div class="row-fluid">
+
+            <!-- start: Main Menu -->
+            <div id="sidebar-left" class="span2">
+
+                <div class="row-fluid actions">
+
+                    <input type="text" class="search span12" placeholder="..." />
+
+                </div>
+
+                <div class="nav-collapse sidebar-nav">
+                    <ul class="nav nav-tabs nav-stacked main-menu">
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 後台人員管理 </span> <span class="label">4</span></a>
+                            <ul>
+                                <li><a class="submenu" href="Staff"><i class="icon-hdd"></i><span class="hidden-tablet"> 帳號管理 </span></a></li>
+                                <li><a class="submenu" href="Group"><i class="icon-envelope"></i><span class="hidden-tablet"> 群組管理 </span></a></li>
+                                <li><a class="submenu" href="Permission"><i class="icon-tasks"></i><span class="hidden-tablet"> 權限管理 </span></a></li>
+                                <li><a class="submenu" href="Log"><i class="icon-tasks"></i><span class="hidden-tablet"> 異動日誌 </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 最新消息管理 </span> <span class="label">3</span></a>
+                            <ul>
+                                <li><a class="submenu" href="IndexBanner"><i class="icon-hdd"></i><span class="hidden-tablet"> 首頁Banner管理 </span></a></li>
+                                <li><a class="submenu" href="LatestNews"><i class="icon-hdd"></i><span class="hidden-tablet"> 公告管理 </span></a></li>
+                                <li><a class="submenu" href="LatestMediaNews"><i class="icon-hdd"></i><span class="hidden-tablet"> 媒體消息管理 </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 地點管理 </span> <span class="label">2</span></a>
+                            <ul>
+                                <li><a class="submenu" href="Location"><i class="icon-hdd"></i><span class="hidden-tablet"> 地點管理 </span></a></li>
+                                <li><a class="submenu" href="Boarding"><i class="icon-hdd"></i><span class="hidden-tablet"> 上車地點管理 </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 行程管理 </span> <span class="label">3</span></a>
+                            <ul>
+                                <li><a class="submenu" href="Viewpoint"><i class="icon-hdd"></i><span class="hidden-tablet"> 景點管理 </span></a></li>
+                                <li><a class="submenu" href="Hotel"><i class="icon-hdd"></i><span class="hidden-tablet"> 飯店管理 </span></a></li>
+                                <li><a class="submenu" href="Travel"><i class="icon-hdd"></i><span class="hidden-tablet"> 行程管理 </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 遊覽車訂位管理 </span> <span class="label">2</span></a>
+                            <ul>
+                                <li><a class="submenu" href="Transportation"><i class="icon-hdd"></i><span class="hidden-tablet"> 遊覽車管理 </span></a></li>
+                                <li><a class="submenu" href="TransportTravel"><i class="icon-hdd"></i><span class="hidden-tablet"> 遊覽車行程管理 </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 會員管理 </span> <span class="label">2</span></a>
+                            <ul>
+                                <li><a class="submenu" href="Member"><i class="icon-hdd"></i><span class="hidden-tablet"> 會員管理 </span></a></li>
+                                <li><a class="submenu" href="Reservation"><i class="icon-hdd"></i><span class="hidden-tablet"> 訂位管理 </span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end: Main Menu -->
+            <!-- start: Content -->
+            <div id="content" class="span10">
+                <div class="row-fluid">
+                    <div class="box span12">
+                        <div class="box-header" data-original-title="">
+                            <h2><i class="icon-user"></i><span class="break"></span>飯店管理</h2>
+                            <div class="box-icon">
+                                <a class="btn-setting" id="addHotel"><i class="icon-plus"></i></a>
+                                <a class="btn-setting" id="uploadBatchHotel"><i class="icon-cloud-upload"></i></a>
+                            </div>
+                        </div>
+                        <div class="box-content">
+                            <table id="hotelListTable" class="table table-striped table-bordered bootstrap-datatable datatable">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>飯店名稱</th>
+                                        <th>飯店地址</th>
+                                        <th>內容</th>
+                                        <th>圖片路徑</th>
+                                        <th>建立時間</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="hotelList">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!--/span-->
+
+                </div><!--/row-->
+            </div>
+            <!-- end: Content -->
+
+        </div><!--/fluid-row-->
+
+        <div class="modal hide fade" id="addHotelModal" aria-hidden="true" style="display:none;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" id="closeHotelAdd">×</button>
+                <h3>添增飯店</h3>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>飯店名稱</label>
+                    <input type="text" name="hotelName" class="addHotelName">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>飯店縣市</label>
+                    <input type="text" name="hotelCity" class="addHotelCity">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>飯店區域</label>
+                    <input type="text" name="hotelArea" class="addHotelArea">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>飯店地址</label>
+                    <input type="text" name="hotelAddress" class="addHotelAddress">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>內容</label>
+                    <textarea type="text" name="hotelContent" class="addHotelContent"></textarea>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>上傳圖片</label>
+                    <input type="file" name="hotelPicFile" class="addHotelPicFile" accept="image/gif, image/jpeg, image/png">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn" data-dismiss="modal" id="closeHotelAdd">取消新增</a>
+                <a class="btn btn-primary" id="addHotel">添增</a>
+            </div>
+        </div>
+        <div class="modal hide fade" id="uploadBatchHotelModal" aria-hidden="true" style="display:none;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" id="closeBatchHotelUpload">×</button>
+                <h3>Excel飯店批次上傳</h3>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>上傳Excel</label>
+                    <input type="file" name="batchHotelFile" class="uploadBatchHotelFile" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn" data-dismiss="modal" id="closeBatchHotelUpload">取消上傳</a>
+                <a class="btn btn-primary" id="uploadBatchHotel">上傳</a>
+            </div>
+        </div>
+        <div class="modal hide fade" id="hotelInfoModal" aria-hidden="true" style="display:none;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" id="closeHotelEdit">×</button>
+                <h3>飯店資訊編輯</h3>
+            </div>
+            <input type="hidden" name="id" class="editId">
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>飯店名稱</label>
+                    <input type="text" name="hotelName" class="editHotelName">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>飯店縣市</label>
+                    <input type="text" name="hotelCity" class="editHotelCity">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>飯店區域</label>
+                    <input type="text" name="hotelArea" class="editHotelArea">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>飯店地址</label>
+                    <input type="text" name="hotelAddress" class="editHotelAddress">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>上傳圖片</label>
+                    <input type="file" name="hotelPicFile" class="editHotelPicFile" accept="image/gif, image/jpeg, image/png">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-group">
+                    <label>內容</label>
+                    <textarea type="text" name="hotelContent" class="editHotelContent"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn" data-dismiss="modal" id="closeHotelEdit">取消編輯</a>
+                <a class="btn btn-primary" id="updateHotel">修改</a>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <footer>
+            <p>
+                <span style="text-align:left;float:left">Copyright &copy; 2014.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></span>
+            </p>
+
+        </footer>
+
+    </div><!--/.fluid-container-->
+    <!-- start: JavaScript-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/dataTables.jqueryui.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/scroller/2.0.5/js/dataTables.scroller.min.js"></script>
+    <!-- mark
+    <script src="/Scripts/js/jquery-1.10.2.min.js"></script>
+    <script src='/Scripts/js/jquery.dataTables.min.js'></script>
+    mark-->
+    <script src="/Scripts/angular.min.js"></script>
+    <script src="/Scripts/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/Scripts/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/Scripts/js/jquery.ui.touch-punch.js"></script>
+    <script src="/Scripts/js/modernizr.js"></script>
+    <script src="/Scripts/js/bootstrap.min.js"></script>
+    <script src="/Scripts/js/jquery.cookie.js"></script>
+    <script src='/Scripts/js/fullcalendar.min.js'></script>
+    <script src="/Scripts/js/excanvas.js"></script>
+    <script src="/Scripts/js/jquery.flot.js"></script>
+    <script src="/Scripts/js/jquery.flot.pie.js"></script>
+    <script src="/Scripts/js/jquery.flot.stack.js"></script>
+    <script src="/Scripts/js/jquery.flot.resize.min.js"></script>
+    <script src="/Scripts/js/jquery.flot.time.js"></script>
+    <script src="/Scripts/js/jquery.chosen.min.js"></script>
+    <script src="/Scripts/js/jquery.uniform.min.js"></script>
+    <script src="/Scripts/js/jquery.cleditor.min.js"></script>
+    <script src="/Scripts/js/jquery.noty.js"></script>
+    <script src="/Scripts/js/jquery.elfinder.min.js"></script>
+    <script src="/Scripts/js/jquery.raty.min.js"></script>
+    <script src="/Scripts/js/jquery.iphone.toggle.js"></script>
+    <script src="/Scripts/js/jquery.uploadify-3.1.min.js"></script>
+    <script src="/Scripts/js/jquery.gritter.min.js"></script>
+    <script src="/Scripts/js/jquery.imagesloaded.js"></script>
+    <script src="/Scripts/js/jquery.masonry.min.js"></script>
+    <script src="/Scripts/js/jquery.knob.modified.js"></script>
+    <script src="/Scripts/js/jquery.sparkline.min.js"></script>
+    <script src="/Scripts/js/counter.min.js"></script>
+    <script src="/Scripts/js/raphael.2.1.0.min.js"></script>
+    <script src="/Scripts/js/justgage.1.0.1.min.js"></script>
+    <script src="/Scripts/js/jquery.autosize.min.js"></script>
+    <script src="/Scripts/js/retina.js"></script>
+    <script src="/Scripts/js/jquery.placeholder.min.js"></script>
+    <script src="/Scripts/js/wizard.min.js"></script>
+    <script src="/Scripts/js/core.min.js"></script>
+    <script src="/Scripts/js/charts.min.js"></script>
+    <script src="/Scripts/js/custom.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function () {
+            if ($.fn.DataTable.isDataTable('#hotelListTable')) {
+                console.log("table true");
+                $('#hotelListTable').DataTable({
+                    destroy: true,
+                    select: true,
+                    language: {
+                        emptyTable: "Not Hotel Datas!"
+                    },
+                    ajax: {
+                        serverSide: true,
+                        processing: true,
+                        url: "@Url.Action("getHotelList", "Hotel")",
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "JSON"
+                    },
+                    rowId: 'hotelId',
+                    columns: [
+                        { data: "hotelId" },
+                        { data: "hotelName" },
+                        { data: "hotelAddress" },
+                        { data: "hotelContent" },
+                        {
+                            data: "hotelPicPath", render: function (data, type, row, meta) {
+                                return `<img src="${ data }">`;
+                            }
+                        },
+                        { data: "fDate" },
+                        {
+                            data: "operation", render: function (data, type, row, meta) {
+                                return `
+								    <a class="btn btn-info" id="editHotel">
+									    <i class="icon-edit "></i>
+								    </a>
+								    <a class="btn btn-danger" id="deleteHotel">
+									    <i class="icon-trash "></i>
+								    </a>`;
+                            }
+                        }
+                    ]
+                });
+            } else {
+                console.log("table false");
+            }
+
+
+            //$.ajax({
+   //         //    url: "@Url.Action("getHotelList", "Hotel")",
+   //             type: "Get",
+   //             contentType: "application/json; charset=utf-8",
+   //             dataType: "JSON",
+   //             success: function (data) {
+   //                 var hotelList = getHotelList(data.data)
+			//		$("#hotelList").html(hotelList);//要刷新的div
+   //                 //table.draw();
+   //             }
+			//})
+
+
+
+            //$('#next').on('click', function () {
+            //    table.page('next').draw('page');
+            //});
+
+            //$('#previous').on('click', function () {
+            //    table.page('previous').draw('page');
+            //});
+
+            function getHotelList(data) {
+                let hotelHtml = '';
+                data.forEach(item => {
+                    hotelHtml += `
+                        <tr>
+						    <td class="center" id="hotelRowId">${ item.hotelId }</td>
+						    <td class="center">${ item.hotelName }</td>
+                            <td class="center">${ item.hotelAddress }</td>
+                            <td class="center">${ item.hotelContent }</td>
+                            <td class="center"><img src="${ item.hotelPicPath }"></td>
+                            <td class="center">${ item.fDate }</td>
+							<td class="center">
+								<a class="btn btn-info" id="editHotel">
+									<i class="icon-edit "></i>
+								</a>
+								<a class="btn btn-danger" id="deleteHotel">
+									<i class="icon-trash "></i>
+								</a>
+							</td>
+					    </tr>`;
+                });
+                console.log(hotelHtml)
+                return hotelHtml;
+            }
+            $("#hotelList").on('click', '#editHotel', function () {
+                var hotelId = $(this).closest("tr")
+                    .attr('id');
+                $.ajax({
+                    url: "@Url.Action("getHotelInfo", "Hotel")",
+                    type: "POST",
+                    data: JSON.stringify({ hotelId: hotelId}),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "JSON",
+                    success: function (data) {
+                        var hotelInfo = data.data[0];
+                        $("#hotelInfoModal").addClass("in");
+                        $(".editId").val(hotelInfo.hotelId);
+                        $(".editHotelName").val(hotelInfo.hotelName);
+                        $(".editHotelCity").val(hotelInfo.hotelCity);
+                        $(".editHotelArea").val(hotelInfo.hotelArea);
+                        $(".editHotelAddress").val(hotelInfo.hotelAddress);
+                        $(".editHotelContent").val(hotelInfo.hotelContent);
+                        $("#hotelInfoModal").attr({ "aria-hidden": "false", style: "display:block;"});
+                    }
+                })
+            })
+            $("#hotelInfoModal").on('click', '#closeHotelEdit', function(){
+                $("#hotelInfoModal").removeClass("in");
+                $("#hotelInfoModal").attr({ "aria-hidden": "true", style: "display:none;"});
+            })
+            $("#addHotelModal").on('click', '#closeHotelAdd', function(){
+                $("#addHotelModal").removeClass("in");
+                $("#addHotelModal").attr({ "aria-hidden": "true", style: "display:none;"});
+            })
+            $("#addHotel").on('click', function () {
+                $("#addHotelModal").addClass("in");
+                $("#addHotelModal").attr({ "aria-hidden": "false", style: "display:block;" });
+            })
+            $("#uploadBatchHotel").on('click', function () {
+                $("#uploadBatchHotelModal").addClass("in");
+                $("#uploadBatchHotelModal").attr({ "aria-hidden": "false", style: "display:block;" });
+            })
+            $("#uploadBatchHotelModal").on('click', '#closeBatchHotelUpload', function () {
+                $("#uploadBatchHotelModal").removeClass("in");
+                $("#uploadBatchHotelModal").attr({ "aria-hidden": "true", style: "display:none;" });
+            })
+			$("#hotelInfoModal").on('click', '#updateHotel', function () {
+                var hotelPicFile = $(".editHotelPicFile").get(0).files;
+                var data = new FormData();
+                var hotelId = $(".editId").val();
+                var hotelName = $(".editHotelName").val();
+                var hotelCity = $(".editHotelCity").val();
+                var hotelArea = $(".editHotelArea").val();
+                var hotelAddress = $(".editHotelAddress").val();
+				var hotelContent = $(".editHotelContent").val();
+				data.append("hotelPicFile", hotelPicFile[0]);
+                data.append("hotelId", hotelId);
+                data.append("hotelName", hotelName);
+                data.append("hotelCity", hotelCity);
+                data.append("hotelArea", hotelArea);
+                data.append("hotelAddress", hotelAddress);
+                data.append("hotelContent", hotelContent);
+                $.ajax({
+                    url: "@Url.Action("updateHotelInfo", "Hotel")",
+                    type: "POST",
+                    data: data,
+                    dataType: "JSON",
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        alert(data.reason);
+                        $("#hotelInfoModal").removeClass("in");
+                        $("#hotelInfoModal").attr({ "aria-hidden": "true", style: "display:none;"});
+                        var url = '@Url.Action("Index", "Hotel")';
+                        window.location.href = url;
+                    }
+                })
+            })
+            $("#hotelList").on('click', '#deleteHotel', function(){
+                var hotelId = $(this).closest("tr")
+                    .attr('id');
+                $.ajax({
+                    url: "@Url.Action("deleteHotel", "Hotel")",
+                    type: "POST",
+                    data: JSON.stringify({ hotelId: hotelId}),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "JSON",
+                    success: function (data) {
+                        alert(data.reason);
+                        $("#hotelInfoModal").removeClass("in");
+                        $("#hotelInfoModal").attr({ "aria-hidden": "true", style: "display:none;"});
+                        var url = '@Url.Action("Index", "Hotel")';
+                        window.location.href = url;
+                    }
+                })
+            })
+
+            $("#addHotelModal").on('click', '#addHotel', function(){
+                var data = new FormData();
+                var hotelPicFile = $(".addHotelPicFile").get(0).files;
+                var hotelName = $(".addHotelName").val();
+                var hotelCity = $(".addHotelCity").val();
+                var hotelArea = $(".addHotelArea").val();
+                var hotelAddress = $(".addHotelAddress").val();
+                var hotelContent = $(".addHotelContent").val();
+                data.append("hotelPicFile", hotelPicFile[0]);
+                data.append("hotelName", hotelName);
+                data.append("hotelCity", hotelCity);
+                data.append("hotelArea", hotelArea);
+                data.append("hotelAddress", hotelAddress);
+                data.append("hotelContent", hotelContent);
+                $.ajax({
+                    url: "@Url.Action("addHotel", "Hotel")",
+                    type: "POST",
+                    data: data,
+                    dataType: "JSON",
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        alert(data.reason);
+                        $("#addHotelModal").removeClass("in");
+                        $("#addHotelModal").attr({ "aria-hidden": "true", style: "display:none;"});
+                        var url = '@Url.Action("Index", "Hotel")';
+                        window.location.href = url;
+                    }
+                })
+            })
+            $("#uploadBatchHotelModal").on('click', '#uploadBatchHotel', function(){
+                var data = new FormData();
+                var uploadBatchViewpointFile = $(".uploadBatchHotelFile").get(0).files;
+                data.append("excelFile", uploadBatchViewpointFile[0]);
+                data.append("excelModule", "hotel");
+                $.ajax({
+                    url: "@Url.Action("ImportFromExcel", "ExcelBatchUpload")",
+                    type: "POST",
+                    data: data,
+                    dataType: "JSON",
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        alert(data.reason);
+                        $("#uploadBatchHotelModal").removeClass("in");
+                        $("#uploadBatchHotelModal").attr({ "aria-hidden": "true", style: "display:none;" });
+                        if (data.success == 1) {
+                            var url = '@Url.Action("Index", "Hotel")';
+                            window.location.href = url;
+                        }
+                    }
+                })
+            })
+        });
+
+    </script>
+    <!-- end: JavaScript-->
+</body>
+</html>
