@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- start: Meta -->
+    <meta charset="utf-8" />
+    <title>SimpliQ - Flat & Responsive Bootstrap Admin Template</title>
+    <meta name="description" content="SimpliQ - Flat & Responsive Bootstrap Admin Template." />
+    <meta name="author" content="Łukasz Holeczek" />
+    <meta name="keyword" content="SimpliQ, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <!-- end: Meta -->
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- end: Mobile Specific -->
+    <!-- start: CSS -->
+    <link href="/Scripts/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Scripts/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/Scripts/css/style.min.css" rel="stylesheet" />
+    <link href="/Scripts/css/style-responsive.min.css" rel="stylesheet" />
+    <link href="/Scripts/css/retina.css" rel="stylesheet" />
+    <!-- end: CSS -->
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <link id="ie-style" href="css/ie.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if IE 9]>
+        <link id="ie9style" href="css/ie9.css" rel="stylesheet">
+    <![endif]-->
+    <!-- start: Favicon and Touch Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Scripts/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Scripts/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Scripts/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="/Scripts/ico/apple-touch-icon-57-precomposed.png" />
+    <link rel="shortcut icon" href="/Scripts/ico/favicon.png" />
+    <!-- end: Favicon and Touch Icons -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <!-- start: Header -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a id="main-menu-toggle" class="hidden-phone open"><i class="icon-reorder"></i></a>
+                <div class="row-fluid">
+                    <a class="brand span2" href="index.html"><span>SimpliQ</span></a>
+                </div>
+                <!-- start: Header Menu -->
+                <div class="nav-no-collapse header-nav">
+                    <ul class="nav pull-right">
+                        <!-- start: User Dropdown -->
+                        <li class="dropdown">
+                            <a class="btn account dropdown-toggle" data-toggle="dropdown" href="#">
+                                <div class="user">
+                                    <span class="hello">Welcome!</span>
+                                    <span class="managerName"></span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu-title">
+
+                                </li>
+                                <li><a href="#"><i class="icon-user"></i> Profile</a></li>
+                                <li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+                                <li><a href="#"><i class="icon-envelope"></i> Messages</a></li>
+                                <li><a href="login.html"><i class="icon-off"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                        <!-- end: User Dropdown -->
+                    </ul>
+                </div>
+                <!-- end: Header Menu -->
+
+            </div>
+        </div>
+    </div>
+    <!-- start: Header -->
+
+    <div class="container-fluid-full">
+        <div class="row-fluid">
+
+            <!-- start: Main Menu -->
+            <div id="sidebar-left" class="span2">
+
+                <div class="row-fluid actions">
+
+                    <input type="text" class="search span12" placeholder="..." />
+
+                </div>
+
+                <div class="nav-collapse sidebar-nav">
+                    <ul class="nav nav-tabs nav-stacked main-menu">
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 後台人員管理 </span> <span class="label">4</span></a>
+                            <ul>
+                                <li><a class="submenu" href="Staff"><i class="icon-hdd"></i><span class="hidden-tablet"> 帳號管理 </span></a></li>
+                                <li><a class="submenu" href="Group"><i class="icon-envelope"></i><span class="hidden-tablet"> 群組管理 </span></a></li>
+                                <li><a class="submenu" href="Permission"><i class="icon-tasks"></i><span class="hidden-tablet"> 權限管理 </span></a></li>
+                                <li><a class="submenu" href="Log"><i class="icon-tasks"></i><span class="hidden-tablet"> 異動日誌 </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 最新消息管理 </span> <span class="label">3</span></a>
+                            <ul>
+                                <li><a class="submenu" href="IndexBanner"><i class="icon-hdd"></i><span class="hidden-tablet"> 首頁Banner管理 </span></a></li>
+                                <li><a class="submenu" href="LatestNews"><i class="icon-hdd"></i><span class="hidden-tablet"> 公告管理 </span></a></li>
+                                <li><a class="submenu" href="LatestMediaNews"><i class="icon-hdd"></i><span class="hidden-tablet"> 媒體消息管理 </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 地點管理 </span> <span class="label">2</span></a>
+                            <ul>
+                                <li><a class="submenu" href="Location"><i class="icon-hdd"></i><span class="hidden-tablet"> 地點管理 </span></a></li>
+                                <li><a class="submenu" href="Boarding"><i class="icon-hdd"></i><span class="hidden-tablet"> 上車地點管理 </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 行程管理 </span> <span class="label">3</span></a>
+                            <ul>
+                                <li><a class="submenu" href="Viewpoint"><i class="icon-hdd"></i><span class="hidden-tablet"> 景點管理 </span></a></li>
+                                <li><a class="submenu" href="Hotel"><i class="icon-hdd"></i><span class="hidden-tablet"> 飯店管理 </span></a></li>
+                                <li><a class="submenu" href="Travel"><i class="icon-hdd"></i><span class="hidden-tablet"> 行程管理 </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 遊覽車訂位管理 </span> <span class="label">2</span></a>
+                            <ul>
+                                <li><a class="submenu" href="Transportation"><i class="icon-hdd"></i><span class="hidden-tablet"> 遊覽車管理 </span></a></li>
+                                <li><a class="submenu" href="TransportTravel"><i class="icon-hdd"></i><span class="hidden-tablet"> 訂位管理 </span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 會員管理 </span> <span class="label">2</span></a>
+                            <ul>
+                                <li><a class="submenu" href="Member"><i class="icon-hdd"></i><span class="hidden-tablet"> 會員管理 </span></a></li>
+                                <li><a class="submenu" href="Reservation"><i class="icon-hdd"></i><span class="hidden-tablet"> 訂位管理 </span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end: Main Menu -->
+            <!-- start: Content -->
+            <p id="demo"></p>
+            <div id="content" class="span10">
+                <div class="row-fluid">
+                    <div class="box span12">
+                        <div class="box-header" data-original-title="">
+                            <h2><i class="icon-user"></i><span class="break"></span>訂單管理</h2>
+                            <div class="box-icon">
+                                <a href="#" class="btn-setting" id="addTravelOrder"><i class="icon-plus"></i></a>
+                                <a href="#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+                                <a href="#" class="btn-close"><i class="icon-remove"></i></a>
+                            </div>
+                        </div>
+                        <div class="box-content">
+                            <table class="table table-striped table-bordered bootstrap-datatable datatable">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>訂單編號</th>
+                                        <th>預定人數</th>
+                                        <th>交易時間</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="travelOrderList">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!--/span-->
+
+                </div><!--/row-->
+                <div id="idReturnAioCheckOut">
+                    <meta charset="utf-8">
+                    <form id="__ecpayForm" method="post" target="_blank" action="https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5">
+                        <input type="hidden" class="MerchantID" name="MerchantID" value="2000132">
+                        <input type="hidden" class="MerchantTradeNo" name="MerchantTradeNo" value="">
+                        <input type="hidden" class="EncryptType" name="EncryptType" value="0">
+                        <input type="hidden" class="ReturnURL" name="ReturnURL" value="https://hoyo.idv.tw/?a=Tools/EcPay&amp;b=ReturnURL">
+                        <input type="hidden" class="MerchantTradeDate" name="MerchantTradeDate" value="2018/08/04 00:00:00">
+                        <input type="hidden" class="PaymentType" name="PaymentType" value="aio">
+                        <input type="hidden" class="TotalAmount" name="TotalAmount" value="999">
+                        <input type="hidden" class="TradeDesc" name="TradeDesc" value="Desc">
+                        <input type="hidden" class="ChoosePayment" name="ChoosePayment" value="ALL">
+                        <input type="hidden" class="NeedExtraPaidInfo" name="NeedExtraPaidInfo" value="N">
+                        <input type="hidden" class="ItemName" name="ItemName" value="aaa 100 元 x 1">
+                        <input type="hidden" class="CheckMacValue" name="CheckMacValue" value="F17C391F21E264FCCEEDF9E068FA671C">
+                        <input type="submit" id="__paymentButton" value="">
+                    </form>
+                </div>
+            </div>
+            <!-- end: Content -->
+
+        </div><!--/fluid-row-->
+
+        <div class="modal hide fade" id="addTravelOrderModal" aria-hidden="true" style="display:none;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" id="closeTravelOrderAdd">×</button>
+                <h3>新增訂單</h3>
+            </div>
+            <div class="modal-body">
+                <div class="lowin-memberTravel">
+                    <label>人數</label>
+                    <input type="text" name="orderNumAdd" class="addOrderNumAdd">
+                    <a href="#" class="btn btn-primary" id="addTravelOrderMember">添增</a>
+                </div>
+                <div class="lowin-group">
+                    <label>選擇旅遊名稱</label>
+                    <select name="yourTravel" class="addTravelId"></select>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <div class="box-content">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>姓名</th>
+                                <th>身分證號</th>
+                                <th>手機</th>
+                                <th>生日</th>
+                                <th>餐點類型</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="travelOrderMemberAddList">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" data-dismiss="modal" id="closeTravelOrderAdd">取消新增</a>
+                <a href="#" class="btn btn-primary" id="addTravelOrder">添增</a>
+            </div>
+        </div>
+
+
+
+
+        <div class="clearfix"></div>
+
+        <footer>
+            <p>
+                <span style="text-align:left;float:left">Copyright &copy; 2014.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></span>
+            </p>
+
+        </footer>
+
+    </div><!--/.fluid-container-->
+    <!-- start: JavaScript-->
+
+    <script src="/Scripts/angular.min.js"></script>
+    <script src="/Scripts/js/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/Scripts/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/Scripts/js/jquery.ui.touch-punch.js"></script>
+    <script src="/Scripts/js/modernizr.js"></script>
+    <script src="/Scripts/js/bootstrap.min.js"></script>
+    <script src="/Scripts/js/jquery.cookie.js"></script>
+    <script src='/Scripts/js/fullcalendar.min.js'></script>
+    <script src='/Scripts/js/jquery.dataTables.min.js'></script>
+    <script src="/Scripts/js/excanvas.js"></script>
+    <script src="/Scripts/js/jquery.flot.js"></script>
+    <script src="/Scripts/js/jquery.flot.pie.js"></script>
+    <script src="/Scripts/js/jquery.flot.stack.js"></script>
+    <script src="/Scripts/js/jquery.flot.resize.min.js"></script>
+    <script src="/Scripts/js/jquery.flot.time.js"></script>
+    <script src="/Scripts/js/jquery.chosen.min.js"></script>
+    <script src="/Scripts/js/jquery.uniform.min.js"></script>
+    <script src="/Scripts/js/jquery.cleditor.min.js"></script>
+    <script src="/Scripts/js/jquery.noty.js"></script>
+    <script src="/Scripts/js/jquery.elfinder.min.js"></script>
+    <script src="/Scripts/js/jquery.raty.min.js"></script>
+    <script src="/Scripts/js/jquery.iphone.toggle.js"></script>
+    <script src="/Scripts/js/jquery.uploadify-3.1.min.js"></script>
+    <script src="/Scripts/js/jquery.gritter.min.js"></script>
+    <script src="/Scripts/js/jquery.imagesloaded.js"></script>
+    <script src="/Scripts/js/jquery.masonry.min.js"></script>
+    <script src="/Scripts/js/jquery.knob.modified.js"></script>
+    <script src="/Scripts/js/jquery.sparkline.min.js"></script>
+    <script src="/Scripts/js/counter.min.js"></script>
+    <script src="/Scripts/js/raphael.2.1.0.min.js"></script>
+    <script src="/Scripts/js/justgage.1.0.1.min.js"></script>
+    <script src="/Scripts/js/jquery.autosize.min.js"></script>
+    <script src="/Scripts/js/retina.js"></script>
+    <script src="/Scripts/js/jquery.placeholder.min.js"></script>
+    <script src="/Scripts/js/wizard.min.js"></script>
+    <script src="/Scripts/js/core.min.js"></script>
+    <script src="/Scripts/js/charts.min.js"></script>
+    <script src="/Scripts/js/custom.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var loginInfo = JSON.parse(localStorage.getItem('loginInfo'));
+            var managerItem = `
+                <span class="hello" > Welcome!</span >
+                <span class="managerName">${loginInfo.name}</span >`;
+            $(".user").html(managerItem);//要刷新的div
+
+            let count = 0;
+            $.ajax({
+                url: "@Url.Action("getMemberTravelList","MemberTravel")",
+                type: "Get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "JSON",
+                success: function (data) {
+                    var memberTravelList = getMemberTravelList(data.data)
+                    $("#memberTravelList").html(memberTravelList);//要刷新的div
+                }
+            })
+            $.ajax({
+                url: "@Url.Action("getTravelList","Travel")",
+                type: "Get",
+                contentType: "application/json; charset=utf-8",
+                dataType: "JSON",
+                success: function (data) {
+                    travelArr = data.data;
+	                var select = $(".addTravelId");
+				    for (var i = 0; i < travelArr.length; i++) {
+					    select.append("<option value='"+travelArr[i].travelId+"'>"
+							+ travelArr[i].travelName + "</option>");
+				    }
+                }
+            })
+
+
+            function getMemberTravelList(data) {
+                let memberTravelHtml = '';
+                data.forEach(item => {
+                    memberTravelHtml += `
+                        <tr>
+						    <td class="center" id="memberTravelRowId">${ item.memberTravelId }</td>
+						    <td class="center">${ item.name }</td>
+							<td class="center">
+								<a class="btn btn-info" href="#" id="editMemberTravel">
+									<i class="icon-edit "></i>
+								</a>
+								<a class="btn btn-danger" href="#" id="deleteMemberTravel">
+									<i class="icon-trash "></i>
+								</a>
+							</td>
+					    </tr>`;
+                });
+                console.log(memberTravelHtml)
+                return memberTravelHtml;
+            }
+
+            function getMemberOrderAddList(orderNum) {
+                let memberTravelHtml = '';
+                count = orderNum;
+                for (let i = 0; i < count; i++) {
+                    memberTravelHtml += `
+                        <tr>
+						    <td class="center" id="travelOrderMemberId">
+                                ${ i }
+                            </td>
+						    <td class="center">
+                                <input type="text" name="orderName" class="addOrderName">
+                            </td>
+						    <td class="center">
+                                <input type="text" name="orderId" class="addOrderId">
+                            </td>
+						    <td class="center">
+                                <input type="text" name="orderPhone" class="addOrderPhone">
+                            </td>
+						    <td class="center">
+                                <input type="text" name="orderBirthday" class="addOrderBirthday">
+                            </td>
+						    <td class="center">
+                                <select name="orderMealType" class="addOrderMealType">
+                                    <option value="0">素食</option>
+                                    <option value="1">葷食</option>
+                                </select>
+                            </td>
+							<td class="center">
+								<a class="btn btn-danger" href="#" id="deleteTravelOrderMember">
+									<i class="icon-trash "></i>
+								</a>
+							</td>
+					    </tr>`;
+                }
+                console.log(memberTravelHtml)
+                return memberTravelHtml;
+            }
+
+            $("#memberTravelList").on('click', '#editMemberTravel', function(){
+                var memberTravelId = $(this).closest("tr")
+                       .find("#memberTravelRowId")
+                       .text();
+                $.ajax({
+                    url: "@Url.Action("getMemberTravelInfo","MemberTravel")",
+                    type: "POST",
+                    data: JSON.stringify({memberTravelId: memberTravelId}),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "JSON",
+                    success: function (data) {
+                        var memberTravelInfo = data.data;
+                        $("#memberTravelInfoModal").addClass("in");
+                        $(".editId").val(memberTravelInfo.memberTravelId);
+                        $(".editMemberTravelName").val(memberTravelInfo.name);
+                        $("#memberTravelInfoModal").attr({ "aria-hidden": "false", style: "display:block;"});
+                    }
+                })
+            })
+            $("#memberTravelInfoModal").on('click', '#closeMemberTravelEdit', function(){
+                $("#memberTravelInfoModal").removeClass("in");
+                $("#memberTravelInfoModal").attr({ "aria-hidden": "true", style: "display:none;"});
+            })
+
+            $("#addTravelOrderModal").on('click', '#addTravelOrderMember', function () {
+                var orderNum = $(".addOrderNumAdd").val();
+                var memberTravelOrderAddList = getMemberOrderAddList(orderNum);
+                $("#travelOrderMemberAddList").html(memberTravelOrderAddList);
+            })
+
+            $("#addTravelOrderModal").on('click', '#closeTravelOrderAdd', function(){
+                $("#addTravelOrderModal").removeClass("in");
+                $("#addTravelOrderModal").attr({ "aria-hidden": "true", style: "display:none;"});
+            })
+            $("#memberTravelInfoModal").on('click', '#updateMemberTravel', function(){
+                var memberTravelId = $(".editId").val();
+                var memberTravelName = $(".editMemberTravelName").val();
+                $.ajax({
+                    url: "@Url.Action("updateMemberTravelInfo","MemberTravel")",
+                    type: "POST",
+                    data: JSON.stringify({memberTravelId: memberTravelId, memberTravelName: memberTravelName}),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "JSON",
+                    success: function (data) {
+                        alert(data.reason);
+                        $("#memberTravelInfoModal").removeClass("in");
+                        $("#memberTravelInfoModal").attr({ "aria-hidden": "true", style: "display:none;"});
+                        var url = '@Url.Action("Index", "MemberTravel")';
+                        window.location.href = url;
+                    }
+                })
+            })
+            $("#memberTravelList").on('click', '#deleteMemberTravel', function(){
+                var memberTravelId = $(this).closest("tr")
+                       .find("#memberTravelRowId")
+                       .text();
+                $.ajax({
+                    url: "@Url.Action("deleteMemberTravel","MemberTravel")",
+                    type: "POST",
+                    data: JSON.stringify({memberTravelId: memberTravelId}),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "JSON",
+                    success: function (data) {
+                        alert(data.reason);
+                        $("#memberTravelInfoModal").removeClass("in");
+                        $("#memberTravelInfoModal").attr({ "aria-hidden": "true", style: "display:none;"});
+                        var url = '@Url.Action("Index", "MemberTravel")';
+                        window.location.href = url;
+                    }
+                })
+            })
+            $("#addTravelOrder").on('click', function(){
+                $("#addTravelOrderModal").addClass("in");
+                $("#addTravelOrderModal").attr({ "aria-hidden": "false", style: "display:block;"});
+            })
+            $("#addTravelOrderModal").on('click', '#addTravelOrder', function(){
+                var orderNum = $(".addOrderNum").val();
+                var orderNum = $(".addOrderNum").val();
+                var orderNum = $(".addOrderNum").val();
+                var orderNum = $(".addOrderNum").val();
+				var payAmt = orderNum * 5;
+                $.ajax({
+                    url: "@Url.Action("createTravelOrder", "Order")",
+					type: "POST",
+                    data: JSON.stringify({ orderNum: orderNum, payAmt: payAmt }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "JSON",
+                    success: function (data) {
+                        alert(data.reason);
+                        $("#addTravelOrderModal").removeClass("in");
+                        $("#addTravelOrderModal").attr({ "aria-hidden": "true", style: "display:none;" });
+                        $(".MerchantID").val(data.MerchantID);
+                        $(".MerchantTradeNo").val(data.MerchantTradeNo);
+                        $(".EncryptType").val(data.EncryptType);
+                        $(".ReturnURL").val(data.ReturnURL);
+                        $(".MerchantTradeDate").val(data.MerchantTradeDate);
+                        $(".PaymentType").val(data.PaymentType);
+                        $(".TotalAmount").val(data.TotalAmount);
+                        $(".TradeDesc").val(data.TradeDesc);
+                        $(".ChoosePayment").val(data.ChoosePayment);
+                        $(".NeedExtraPaidInfo").val(data.NeedExtraPaidInfo);
+                        $(".ItemName").val(data.ItemName);
+                        $(".CheckMacValue").val(data.CheckMacValue);
+                        $('#__ecpayForm').attr('target', '_blank').submit();
+                    }
+                })
+            })
+        });
+
+    </script>
+    <!-- end: JavaScript-->
+</body>
+</html>

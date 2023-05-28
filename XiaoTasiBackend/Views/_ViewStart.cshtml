@@ -1,0 +1,73 @@
+﻿
+@{
+    string ControllerName = Convert.ToString(HttpContext.Current.Request.RequestContext.RouteData.Values["Controller"]);
+    switch (ControllerName.ToUpper())
+    {
+        case "Staff":
+            Layout = "~/Views/Shared/_StaffLayout.cshtml";
+            break;
+        case "Member":
+            Layout = "~/Views/Shared/_MemberLayout.cshtml";
+            break;
+        case "Permission":
+            Layout = "~/Views/Shared/_PermissionLayout.cshtml";
+            break;
+        case "Register":
+            Layout = "~/Views/Shared/_RegisterLayout.cshtml";
+            break;
+        case "Log":
+            Layout = "~/Views/Shared/_LogLayout.cshtml";
+            break;
+        case "Group":
+            Layout = "~/Views/Shared/_GroupLayout.cshtml";
+            break;
+        case "LatestNews":
+            Layout = "~/Views/Shared/_LatestNewsLayout.cshtml";
+            break;
+        case "LatestMediaNews":
+            Layout = "~/Views/Shared/_LatestMediaNewsLayout.cshtml";
+            break;
+        case "Location":
+            Layout = "~/Views/Shared/_LocationLayout.cshtml";
+            break;
+        case "Boarding":
+            Layout = "~/Views/Shared/_BoardingLayout.cshtml";
+            break;
+        case "Travel":
+            Layout = "~/Views/Shared/_TravelLayout.cshtml";
+            break;
+        case "Transportation":
+            Layout = "~/Views/Shared/_TransportationLayout.cshtml";
+            break;
+        case "TransportTravel":
+            Layout = "~/Views/Shared/_TransportTravelLayout.cshtml";
+            break;
+        case "Reservation":
+            Layout = "~/Views/Shared/_ReservationLayout.cshtml";
+            break;
+        case "MemberIndex":
+            Layout = "~/Views/Shared/_MemberIndexLayout.cshtml";
+            break;
+        case "MemberTravel":
+            Layout = "~/Views/Shared/_MemberTravelLayout.cshtml";
+            break;
+        case "MemberReservation":
+            Layout = "~/Views/Shared/_MemberReservationLayout.cshtml";
+            break;
+        case "IndexBanner":
+            Layout = "~/Views/Shared/_IndexBannerLayout.cshtml";
+            break;
+        case "Order":
+            Layout = "~/Views/Shared/_OrderLayout.cshtml";
+            break;
+        case "Login":
+            Layout = "~/Views/Shared/_LoginLayout.cshtml";
+            break;
+        case "SystemLayout":
+            Layout = "~/Views/Shared/_SystemLayout.cshtml";
+            break;
+        default:
+            Layout = "~/Views/Shared/_Layout.cshtml";
+            break;
+    }
+}
