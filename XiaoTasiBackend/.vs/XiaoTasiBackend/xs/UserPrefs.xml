@@ -1,14 +1,17 @@
 ﻿<Properties StartupConfiguration="{59C404AC-82FE-48E3-B9F4-763FD6BF7ACA}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="packages.config">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Web.config">
     <Files>
       <File FileName="packages.config" Line="1" Column="1" />
+      <File FileName="Web.config" Line="1" Column="1" />
+      <File FileName="Global.asax" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="XiaoTasiBackend" expanded="True">
             <Node name="XiaoTasiBackend" expanded="True">
-              <Node name="Packages" expanded="True" selected="True" />
+              <Node name="References" expanded="True" />
+              <Node name="Web.config" selected="True" />
             </Node>
           </Node>
         </State>
